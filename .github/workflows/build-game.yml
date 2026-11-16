@@ -131,9 +131,8 @@ jobs:
             runs-on: windows
           - target: macos
             runs-on: macos
-          # TODO: Install XCode to build iOS
-          # - target: ios
-          #   runs-on: macos
+          - target: ios
+            runs-on: macos
     runs-on:
       - ${{ matrix.runs-on }}
     defaults:
